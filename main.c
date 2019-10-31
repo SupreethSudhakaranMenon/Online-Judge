@@ -1,21 +1,16 @@
 #include <stdio.h>
 #include <math.h>
+
 int main(void)
 {
-    long long int a=0,i=0,j=0,b=0,x,y,n;
-    scanf("%lld %lld %lld", &n, &x, &y);
-    while (n>0)
+    long long int a,b,T,i;
+    scanf("%lld", &T);
+   
+    for(i=0;i<T;i++)
     {
-        a = a + (n%10)*pow(x,i);
-        n = n/10;
-        i++ ;
+    scanf("%lld", &a);
+    b=sqrt(a);
+    printf("%lld \n", b);
     }
-    while (a > 0)
-    {
-        b= b+(a%y)*pow(10,j);
-        a = a/y;
-        j++;
-    }
-    printf(" %lld\n", b);
     return 0;
 }
